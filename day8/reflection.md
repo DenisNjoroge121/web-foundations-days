@@ -1,0 +1,7 @@
+# Day 8 Reflection
+
+The most difficult concept in this course was understanding how a system stays correct when many users make requests at the same time. At first, it was easy to think that checking whether a seat was available in the interface would be enough. I learned that two customers can see the same seat as available before either request finishes. I worked through this by studying database transactions, row locking, unique constraints, and the importance of treating the database as the source of truth. This helped me understand why the interface alone cannot prevent double-booking.
+
+Based on the feedback I received on my capstone, I would improve the architecture explanation and make the assumptions behind the traffic estimates clearer. I would also test important user flows more systematically, especially error handling and what happens when multiple users try to reserve the same resource. A diagram is useful, but I want to make sure I can explain why each component exists and what happens when it fails.
+
+Next, I want to learn more about backend development and production databases, particularly PostgreSQL transactions, indexing, and query performance. I also want to practise load testing with realistic traffic patterns and learn how monitoring helps identify bottlenecks before users experience them. These skills will help me move from building applications that work in a small demo to designing services that remain reliable as their user base grows.
